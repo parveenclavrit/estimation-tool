@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login/login.component';
+import { SignupComponent } from './login/signup/signup.component';
 
 const routes: Routes = [
   // {
-  //   path: 'home',
-  //   loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  //   path: 'login',
+  //   loadChildren: () => import('./login/login.module').then( m => m.LoginModule)
   // },
   // {
   //   path: '',
@@ -13,6 +14,7 @@ const routes: Routes = [
   //   pathMatch: 'full'
   // },
   { path: '', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
 ];
 
 @NgModule({
